@@ -7,7 +7,7 @@ n = 0
 
 # Loop to perform sum
 for number in infile:
-    number = float(number)
+    number = float(number) # rendo la stringa che legge un float
     mean = mean + number
     n += 1
 
@@ -17,3 +17,5 @@ infile.close()
 # Calculate the mean.
 mean = mean/n
 print mean
+
+
