@@ -17,7 +17,7 @@ n = 0
 while True:  # This will keep looping until we break out.
     # Here we use a try/except block to try to read the data as normal
     # and to break out if unsuccessful - ie when we reach the end of the file.
-    try:
+    try: # se arriva un errore nella sezione try passa direttamente alla except 
         # Read the next line
         line = tide_file.readline()
 
@@ -26,7 +26,7 @@ while True:  # This will keep looping until we break out.
 
         # If we do not have 5 words then it must be blank lines at the end of the file.
         if len(words) != 5:
-            break
+            break 
     except:
         # If we failed to read a line then we must have got to the end.
         break
